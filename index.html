@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS4 - Test</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body class="text-center">
+  <h1>CSS4 - Test</h1>
+  <a class="btn btn-primary" href="./wp-plugin-screen/">wp-plugin-screen</a>
+  <a class="btn btn-primary" href="./wp-plugin-screen/">Another</a>
+  <a class="btn btn-primary" href="./email-template/index.html">Email templates</a>
+
+
+
+  <div id="fomoController">
+    <div v-for="data in datasActive">
+            {{ data.fomoName }}
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
+
+    <script>
+      var app = new Vue({
+        el: '#fomoController',
+        data: {
+            datasActive: [
+                {fomoName:'Welcome Bonus', category:'Bonus Point', clicks:'12,789', visibleGreen:'icon-Users', visiblePink:'icon-Users', visibleOrange:'icon-Users', action:'icon-lineedit'},
+                {fomoName:'You get 5. Your friend get(s) 50.', category:'Referral', clicks:'12,789', visibleGreen:'icon-Users', visiblePink:'icon-Users', visibleOrange:'icon-Users', action:'icon-lineedit'},
+                {fomoName:'Custom FOMO', category:'Custom', clicks:'12,789', visibleGreen:'icon-Users', visiblePink:'icon-Users', visibleOrange:'icon-Users', action:'icon-lineedit'},
+                {fomoName:'Gust User FOMO', category:'Pay with Points', clicks:'12,789', visibleGreen:'icon-Users', visiblePink:'icon-Users', visibleOrange:'icon-Users', action:'icon-lineedit'},
+                {fomoName:'Subscribe to our newsletter', category:'Newsletter', clicks:'12,789', visibleGreen:'icon-Users', visiblePink:'icon-Users', visibleOrange:'icon-Users', action:'icon-lineedit'}
+            ]
+        }
+          
+        });
+
+    </script>
+</body>
+</html>
